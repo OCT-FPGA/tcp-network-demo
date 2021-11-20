@@ -40,15 +40,17 @@ Alveo U280 has two 100 Gbps QSFP-28 ports (port 0 and port 1). It is possible to
 export XILINXD_LICENSE_FILE=2100@xilinxlicense.massopen.cloud
 ```
 
-Now you are ready to start building the bitstream. For this, you should use the script ```run_build.sh``` takes three input arguments. If you want to build both sender and the receiver, set the first two arguments to 1. The third argument is for the interface. Use 0 or 1 depending on which interface you want to use.
+Now you are ready to start building the bitstream. For this, you should use the script ```run_build.sh``` takes three input arguments. If you want to build both sender and the receiver, set the first two arguments to 1. The third argument is the sender interface, and the fourth is the receiver interface. Use 0 or 1 depending on which interface you want to use.
 
-To use port 0:
+Example: 
 
-```./run_build.sh 1 1 0```
+To use port 0 for both sender and receiver:
 
-To use port 1:
+```./run_build.sh 1 1 0 0```
 
-```./run_build.sh 1 1 1```
+To use port 0 for sender and port 1 for receiver:
+
+```./run_build.sh 1 1 0 1```
 
 
 This will create sender and receiver-side host executables and two FPGA bitstream with the logic shown in the figure. The bitstream build process can take up to 9~10 hours depending on the flavor of your MOC instance and the number of jobs that you specified.  
