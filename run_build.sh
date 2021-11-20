@@ -9,7 +9,16 @@ if [ "$#" -ne 3 ]; then
 fi
 if [ "$1" == "1" ]; then
 	make all USER_KRNL=hls_send_krnl INTERFACE=$3
+elif [ "$1" == "0"]; then
+	echo "Not building the sender"
+else
+	echo "Syntax: run_build.sh <build_sender=(1 or 0)> <build_receiver=1 or 0> <interface=0 or 1>"
 fi
 if [ "$2" == "1" ]; then
 	make all USER_KRNL=hls_recv_krnl INTERFACE=$3
+elif [ "$2" == "0"]; then
+        echo "Not building the receiver"
+else
+        echo "Syntax: run_build.sh <build_sender=(1 or 0)> <build_receiver=1 or 0> <interface=0 or 1>"
 fi
+
