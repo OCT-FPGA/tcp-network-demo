@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="scatter" xd:componentRef="scatter" xd:initiationInterval="8" xd:clockPeriod="3.200" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="m_axis_listen_port" xd:originalName="m_axis_listen_port" xd:direction="out" xd:interfaceRef="m_axis_listen_port_V_V" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_listen_port_status" xd:originalName="s_axis_listen_port_status" xd:direction="in" xd:interfaceRef="s_axis_listen_port_status_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_notifications.sessionID" xd:originalName="s_axis_notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_notifications.length" xd:originalName="s_axis_notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_notifications.ipAddress" xd:originalName="s_axis_notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="s_axis_notifications.dstPort" xd:originalName="s_axis_notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="79:64" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_notifications.closed" xd:originalName="s_axis_notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="80:80" xd:dataWidth="1"/>
+  <xd:arg xd:name="m_axis_read_package.sessionID" xd:originalName="m_axis_read_package" xd:direction="out" xd:interfaceRef="m_axis_read_package_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_read_package.length" xd:originalName="m_axis_read_package" xd:direction="out" xd:interfaceRef="m_axis_read_package_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_rx_metadata" xd:originalName="s_axis_rx_metadata" xd:direction="in" xd:interfaceRef="s_axis_rx_metadata_V_V" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_rx_data.data" xd:originalName="s_axis_rx_data" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataWidth="512"/>
+  <xd:arg xd:name="s_axis_rx_data.keep" xd:originalName="s_axis_rx_data" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="s_axis_rx_data.last" xd:originalName="s_axis_rx_data" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="m_axis_open_connection.ip_address" xd:originalName="m_axis_open_connection" xd:direction="out" xd:interfaceRef="m_axis_open_connection_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32"/>
+  <xd:arg xd:name="m_axis_open_connection.ip_port" xd:originalName="m_axis_open_connection" xd:direction="out" xd:interfaceRef="m_axis_open_connection_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:32" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_open_status.sessionID" xd:originalName="s_axis_open_status" xd:direction="in" xd:interfaceRef="s_axis_open_status_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_open_status.success" xd:originalName="s_axis_open_status" xd:direction="in" xd:interfaceRef="s_axis_open_status_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="16:16" xd:dataWidth="1"/>
+  <xd:arg xd:name="m_axis_close_connection" xd:originalName="m_axis_close_connection" xd:direction="out" xd:interfaceRef="m_axis_close_connection_V_V" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_tx_metadata.sessionID" xd:originalName="m_axis_tx_metadata" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_tx_metadata.length" xd:originalName="m_axis_tx_metadata" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_tx_data.data" xd:originalName="m_axis_tx_data" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataWidth="512"/>
+  <xd:arg xd:name="m_axis_tx_data.keep" xd:originalName="m_axis_tx_data" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="m_axis_tx_data.last" xd:originalName="m_axis_tx_data" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_tx_status.sessionID" xd:originalName="s_axis_tx_status" xd:direction="in" xd:interfaceRef="s_axis_tx_status_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_tx_status.length" xd:originalName="s_axis_tx_status" xd:direction="in" xd:interfaceRef="s_axis_tx_status_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_tx_status.remaining_space" xd:originalName="s_axis_tx_status" xd:direction="in" xd:interfaceRef="s_axis_tx_status_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="61:32" xd:dataWidth="30"/>
+  <xd:arg xd:name="s_axis_tx_status.error" xd:originalName="s_axis_tx_status" xd:direction="in" xd:interfaceRef="s_axis_tx_status_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:62" xd:dataWidth="2"/>
+  <xd:arg xd:name="runExperiment" xd:originalName="runExperiment" xd:direction="in" xd:interfaceRef="runExperiment_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="2"/>
+  <xd:arg xd:name="useConn" xd:originalName="useConn" xd:direction="in" xd:interfaceRef="useConn_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="2"/>
+  <xd:arg xd:name="useIpAddr" xd:originalName="useIpAddr" xd:direction="in" xd:interfaceRef="useIpAddr_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="2"/>
+  <xd:arg xd:name="pkgWordCount" xd:originalName="pkgWordCount" xd:direction="in" xd:interfaceRef="pkgWordCount_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="2"/>
+  <xd:arg xd:name="regBasePort" xd:originalName="regBasePort" xd:direction="in" xd:interfaceRef="regBasePort_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="2"/>
+  <xd:arg xd:name="usePort" xd:originalName="usePort" xd:direction="in" xd:interfaceRef="usePort_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="2"/>
+  <xd:arg xd:name="expectedRespInKB" xd:originalName="expectedRespInKB" xd:direction="in" xd:interfaceRef="expectedRespInKB_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="2"/>
+  <xd:arg xd:name="finishExperiment" xd:originalName="finishExperiment" xd:direction="in" xd:interfaceRef="finishExperiment_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="2"/>
+  <xd:arg xd:name="clientPkgNum" xd:originalName="clientPkgNum" xd:direction="in" xd:interfaceRef="clientPkgNum_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress0" xd:originalName="regIpAddress0" xd:direction="in" xd:interfaceRef="regIpAddress0_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress1" xd:originalName="regIpAddress1" xd:direction="in" xd:interfaceRef="regIpAddress1_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress2" xd:originalName="regIpAddress2" xd:direction="in" xd:interfaceRef="regIpAddress2_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress3" xd:originalName="regIpAddress3" xd:direction="in" xd:interfaceRef="regIpAddress3_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress4" xd:originalName="regIpAddress4" xd:direction="in" xd:interfaceRef="regIpAddress4_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress5" xd:originalName="regIpAddress5" xd:direction="in" xd:interfaceRef="regIpAddress5_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress6" xd:originalName="regIpAddress6" xd:direction="in" xd:interfaceRef="regIpAddress6_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress7" xd:originalName="regIpAddress7" xd:direction="in" xd:interfaceRef="regIpAddress7_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress8" xd:originalName="regIpAddress8" xd:direction="in" xd:interfaceRef="regIpAddress8_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress9" xd:originalName="regIpAddress9" xd:direction="in" xd:interfaceRef="regIpAddress9_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:arg xd:name="regIpAddress10" xd:originalName="regIpAddress10" xd:direction="in" xd:interfaceRef="regIpAddress10_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:latencyEstimates xd:best-case="7" xd:worst-case="7" xd:average-case="7"/>
+  <xd:resourceEstimates xd:LUT="4777" xd:FF="2362" xd:BRAM="9" xd:DSP="0"/>
+</xd:acceleratorMap>

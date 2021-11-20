@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="ethernet_frame_padding_512" xd:componentRef="ethernet_frame_padding_512" xd:initiationInterval="1" xd:clockPeriod="3.200" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="s_axis.data" xd:originalName="s_axis" xd:direction="in" xd:interfaceRef="s_axis" xd:busTypeRef="axis" xd:dataWidth="512"/>
+  <xd:arg xd:name="s_axis.keep" xd:originalName="s_axis" xd:direction="in" xd:interfaceRef="s_axis" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="s_axis.last" xd:originalName="s_axis" xd:direction="in" xd:interfaceRef="s_axis" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="m_axis.data" xd:originalName="m_axis" xd:direction="out" xd:interfaceRef="m_axis" xd:busTypeRef="axis" xd:dataWidth="512"/>
+  <xd:arg xd:name="m_axis.keep" xd:originalName="m_axis" xd:direction="out" xd:interfaceRef="m_axis" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="m_axis.last" xd:originalName="m_axis" xd:direction="out" xd:interfaceRef="m_axis" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="16" xd:worst-case="16" xd:average-case="16"/>
+  <xd:resourceEstimates xd:LUT="2259" xd:FF="78622" xd:BRAM="17" xd:DSP="0"/>
+</xd:acceleratorMap>

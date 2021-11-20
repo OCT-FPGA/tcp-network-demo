@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="dhcp_client" xd:componentRef="dhcp_client" xd:initiationInterval="7" xd:clockPeriod="3.200" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="m_axis_open_port" xd:originalName="m_axis_open_port" xd:direction="out" xd:interfaceRef="m_axis_open_port_V_V" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_open_port_status" xd:originalName="s_axis_open_port_status" xd:direction="in" xd:interfaceRef="s_axis_open_port_status_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_rx_metadata.sourceSocket.port" xd:originalName="s_axis_rx_metadata" xd:direction="in" xd:interfaceRef="s_axis_rx_metadata_V_sourceSocket" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_rx_metadata.sourceSocket.addr" xd:originalName="s_axis_rx_metadata" xd:direction="in" xd:interfaceRef="s_axis_rx_metadata_V_sourceSocket" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="s_axis_rx_metadata.destinationSocket.port" xd:originalName="s_axis_rx_metadata" xd:direction="in" xd:interfaceRef="s_axis_rx_metadata_V_destinationSocket" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="s_axis_rx_metadata.destinationSocket.addr" xd:originalName="s_axis_rx_metadata" xd:direction="in" xd:interfaceRef="s_axis_rx_metadata_V_destinationSocket" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="s_axis_rx_data.data" xd:originalName="s_axis_rx_data" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="s_axis_rx_data.keep" xd:originalName="s_axis_rx_data" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="s_axis_rx_data.last" xd:originalName="s_axis_rx_data" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="m_axis_tx_metadata.sourceSocket.port" xd:originalName="m_axis_tx_metadata" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_tx_metadata.sourceSocket.addr" xd:originalName="m_axis_tx_metadata" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="m_axis_tx_metadata.destinationSocket.port" xd:originalName="m_axis_tx_metadata" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_tx_metadata.destinationSocket.addr" xd:originalName="m_axis_tx_metadata" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="m_axis_tx_length" xd:originalName="m_axis_tx_length" xd:direction="out" xd:interfaceRef="m_axis_tx_length_V_V" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="m_axis_tx_data.data" xd:originalName="m_axis_tx_data" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="m_axis_tx_data.keep" xd:originalName="m_axis_tx_data" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="m_axis_tx_data.last" xd:originalName="m_axis_tx_data" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="dhcpEnable" xd:originalName="dhcpEnable" xd:direction="in" xd:interfaceRef="dhcpEnable_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="1"/>
+  <xd:arg xd:name="inputIpAddress" xd:originalName="inputIpAddress" xd:direction="in" xd:interfaceRef="inputIpAddress_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="1"/>
+  <xd:arg xd:name="dhcpIpAddressOut" xd:originalName="dhcpIpAddressOut" xd:direction="out" xd:interfaceRef="dhcpIpAddressOut_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="32" xd:firstOut="1"/>
+  <xd:arg xd:name="myMacAddress" xd:originalName="myMacAddress" xd:direction="in" xd:interfaceRef="myMacAddress_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="48" xd:firstOut="1"/>
+  <xd:latencyEstimates xd:best-case="6" xd:worst-case="6" xd:average-case="6"/>
+  <xd:resourceEstimates xd:LUT="1281" xd:FF="621" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>
