@@ -3,7 +3,7 @@ if ! [ -v "XILINXD_LICENSE_FILE" ]; then
 	echo "Please set XILINXD_LICENSE_FILE environment variable to point to the license server."
 	exit 1
 fi
-if [ "$#" -ne 3 ]; then
+if [ "$#" -ne 4 ]; then
 	echo "Syntax: run_build.sh <build_sender=(1 or 0)> <build_receiver=1 or 0> <sender interface=0 or 1> <receiver interface=0 or 1>"
     	exit 1
 fi
