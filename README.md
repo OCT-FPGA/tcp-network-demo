@@ -40,7 +40,7 @@ Alveo U280 has two 100 Gbps QSFP-28 ports (port 0 and port 1). It is possible to
 export XILINXD_LICENSE_FILE=2100@xilinxlicense.massopen.cloud
 ```
 
-Now you are ready to start building the bitstream. For this, you should use the script ```run_build.sh``` takes three input arguments. If you want to build both sender and the receiver, set the first two arguments to 1. The third argument is the sender interface, and the fourth is the receiver interface. Use 0 or 1 depending on which interface you want to use.
+Now you are ready to start building the bitstream. For this, you should use the script ```run_build.sh``` takes four input arguments. If you want to build both sender and the receiver, set the first two arguments to 1. The third argument is the sender interface, and the fourth is the receiver interface. Use 0 or 1 depending on which interface you want to use.
 
 Example: 
 
