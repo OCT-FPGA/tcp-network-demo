@@ -1,6 +1,6 @@
 # TCP Encryption and Decryption Example Using 2 Network Attached Alveo U280s
 
-TCPP encrypt and decrypt example with pre-built network layer and cmac kernels. The network layer was built using the TCP/IP stack in [1]. This stack was written in Vivado HLS and was compatible with older versions of Vitis (2020.1 and earlier). Starting 2020.2, Vitis doesn't support Vivado HLS. Therefore, the TCP stack in this example was built using Vitis 2020.1. Nevertheless, you should not be having any issues building this example using Vitis 2021.1 or later versions.
+TCP encrypt and decrypt example with pre-built network layer and cmac kernels. The network layer was built using the TCP/IP stack in [1]. This stack was written in Vivado HLS and was compatible with older versions of Vitis (2020.1 and earlier). Starting 2020.2, Vitis doesn't support Vivado HLS. Therefore, the TCP stack in this example was built using Vitis 2020.1. Nevertheless, you should not be having any issues building this example using Vitis 2021.1 or later versions.
 
 ## Introduction
 
