@@ -96,7 +96,7 @@ Receiver side syntax:
 ./host_hls_recv_krnl <xclbin> <number of packets> <decrypt or no-decrypt (optional)> <receiver IP (optional)> 
 ```
 
-Example - Receive 1 UDP packet on interface 1 without decrypting
+Example - Receive 1 TCP packet on interface 1 without decrypting
 
 ```
 ./host_hls_recv_krnl demo_hls_recv_krnl_if1.xclbin 1
@@ -108,7 +108,7 @@ Sender side syntax:
 ./host_hls_send_krnl <xclbin> <number of packets> <encrypt or no-encrypt (optional)> <sender IP (optional)> <receiver IP (optional)> 
 ```
 
-Example - Send 1 encrypted UDP packet on interface 0
+Example - Send 1 encrypted TCP packet on interface 0
 
 ```
 ./host_hls_send_krnl demo_hls_send_krnl_if0.xclbin 1 encrypt
