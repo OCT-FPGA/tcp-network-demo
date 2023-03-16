@@ -2,11 +2,6 @@
 if ! [ -v "XILINXD_LICENSE_FILE" ]; then
 	echo "Please set XILINXD_LICENSE_FILE environment variable to point to the license server."
 	exit 1
-elif ! [ "$XILINXD_LICENSE_FILE" == "2100@xilinxlicense.massopen.cloud" ]; then
-	echo "Incorrect value set for the environment variable XILINXD_LICENSE_FILE"
-	exit 1
-else
-	echo "XILINXD_LICENSE_FILE environment variable is correctly set"
 fi
 if [ "$#" -ne 4 ]; then
 	echo "Required number of arguments missing (4 required)"
