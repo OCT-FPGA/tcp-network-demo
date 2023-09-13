@@ -1,6 +1,6 @@
 # TCP Encryption and Decryption Example Using 2 Network Attached Alveo U280s
 
-TCP encrypt and decrypt example with pre-built network layer and cmac kernels. The network layer was built using the TCP/IP stack in [1]. This stack was written in Vivado HLS and was compatible with older versions of Vitis (2020.1 and earlier). Starting 2020.2, Vitis doesn't support Vivado HLS. Therefore, the TCP stack in this example was built using Vitis 2020.1. Nevertheless, you should not be having any issues building this example using Vitis 2021.1 or later versions.
+TCP encrypt and decrypt example with pre-built network layer and cmac kernels: The network layer was built using the TCP/IP stack in [1]. This stack was written in Vivado HLS and was compatible with older versions of Vitis (2020.1 and earlier). Starting 2020.2, Vitis doesn't support Vivado HLS. Therefore, the TCP stack in this example was built using Vitis 2020.1. Nevertheless, you should not be having any issues building this example using Vitis 2021.1 or later versions.
 
 ## Introduction
 
@@ -10,7 +10,7 @@ In this example, we use ETH Zurich TCP stack [1] and CMAC kernels as pre-built b
 
 - A build machine with Vitis 2021.2. If you do not have such machine, we can provide you with access to one. [This document](https://github.com/OCT-FPGA/OCT-Tutorials/blob/master/nercsetup/nerc-vm-guide.md) will guide you on how to sign up and obtain access to our build machine.
 
-- A Cloudlab experiment should be created with two nodes. Instructions are given [here](https://github.com/OCT-FPGA/oct-tutorials/tree/master/cloudlab-setup). Note that you don't need to set up the experiment until you finish bitstream generation. The Cloudlab experiment is only needed for the targeting workflow. This workflow has been tested and verified using Xilinx RunTime (XRT) version 2021.1. Other versions may also support, but not tested. So, you may select the Cloudlab profile ```fpga-post-boot``` with any of these tool versions, and two compute nodes when creating the experiment.  
+- A Cloudlab experiment should be created with two nodes. Instructions are given [here](https://github.com/OCT-FPGA/oct-tutorials/tree/master/cloudlab-setup). Note that you don't need to set up the experiment until you finish bitstream generation. The Cloudlab experiment is only needed for the targeting workflow. This workflow has been tested and verified using Xilinx RunTime (XRT) version 2021.1. Other versions may also support, but not tested. So, you may select the Cloudlab profile ```oct-u280``` with any of these tool versions, and two compute nodes when creating the experiment.  
 
 ## Architecture
 
@@ -30,7 +30,7 @@ First, you should clone the repository using
 To configure the environment to run Vitis commands, run the following shell commands.
 
 ```bash
-source /tools/Xilinx/Vitis/2021.1/settings64.sh
+source /tools/Xilinx/Vitis/2021.2/settings64.sh
 source /opt/xilinx/xrt/setup.sh
 ```
 
